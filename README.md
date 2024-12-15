@@ -1,50 +1,96 @@
-# Welcome to your Expo app 👋
+Recipe Corner
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Recipe Corner is a mobile-friendly recipe management app built using React Native and Expo. It allows users to browse recipes by categories, search for specific dishes, view detailed recipe information, and save their favorite recipes. The app uses API integration to fetch real-time recipe data and provides a seamless user experience.
 
-## Get started
+Features
 
-1. Install dependencies
+Recipe Categories: Browse recipes by categories such as Breakfast, Lunch, Dinner, etc.
 
-   ```bash
-   npm install
-   ```
+Search Functionality: Search for recipes by name with a responsive search bar.
 
-2. Start the app
+Detailed Recipe View: Access detailed information about ingredients and instructions for each recipe.
 
-   ```bash
-    npx expo start
-   ```
+Favorites Management: Save favorite recipes and view them in a dedicated section.
 
-In the output, you'll find options to open the app in a
+Mobile Optimization: Fully responsive design, optimized for mobile devices.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Offline Caching: Cached recipe data for offline viewing.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Technologies Used
 
-## Get a fresh project
+React Native: For building the app's front-end.
 
-When you're ready, run:
+Expo: To streamline development and deployment.
 
-```bash
-npm run reset-project
-```
+Axios: For API integration to fetch recipes.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+AsyncStorage: For caching data locally and managing favorites.
 
-## Learn more
+React Navigation: For seamless in-app navigation.
 
-To learn more about developing your project with Expo, look at the following resources:
+Spoonacular API: To fetch real-time recipe data.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Screens
 
-## Join the community
+Home Screen: Displays recipe categories.
 
-Join our community of developers creating universal apps.
+Recipe List Screen: Shows a list of recipes for a selected category.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Recipe Detail Screen: Provides detailed recipe instructions and ingredients.
+
+Favorites Screen: Lists all saved favorite recipes.
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/yourusername/recipe-corner.git
+
+Navigate to the project directory:
+
+cd recipe-corner
+
+Install dependencies:
+
+npm install
+
+Start the development server:
+
+expo start
+
+How to Use
+
+Launch the app on your device or emulator.
+
+Navigate through recipe categories from the Home Screen.
+
+Search for recipes using the search bar on the Recipe List Screen.
+
+View detailed instructions and ingredients on the Recipe Detail Screen.
+
+Save your favorite recipes for quick access in the Favorites Screen.
+
+API Key Setup
+
+This project uses the Spoonacular API to fetch recipe data. To use the app, you need to obtain a free API key from Spoonacular and replace the placeholder in the code:
+
+apiKey: 'your-api-key-here'
+
+Future Enhancements
+
+Add user authentication for personalized recipe management.
+
+Implement advanced filtering and sorting options.
+
+Enable social sharing of recipes.
+
+License
+
+This project is licensed under the MIT License.
+
+Acknowledgments
+
+Spoonacular API for providing recipe data.
+
+Inspiration from modern recipe apps and community feedback.
+
