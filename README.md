@@ -1,96 +1,70 @@
-Recipe Corner
+# Recipe Corner  
 
-Recipe Corner is a mobile-friendly recipe management app built using React Native and Expo. It allows users to browse recipes by categories, search for specific dishes, view detailed recipe information, and save their favorite recipes. The app uses API integration to fetch real-time recipe data and provides a seamless user experience.
+Recipe Corner is a mobile-friendly recipe management app built using React Native and Expo. It allows users to explore categorized recipes, view detailed instructions and ingredients, search recipes, and manage favorites.  
 
-Features
+## Features  
 
-Recipe Categories: Browse recipes by categories such as Breakfast, Lunch, Dinner, etc.
+- **Categorized Recipes**: Browse recipes by category such as Breakfast, Lunch, Dinner, and more.  
+- **Search Functionality**: Easily search for recipes within each category.  
+- **Detailed Views**: Access detailed instructions, ingredients, and images for each recipe.  
+- **Favorites Management**: Save your favorite recipes for quick access.  
+- **Offline Support**: Cached data ensures functionality even without internet access.  
 
-Search Functionality: Search for recipes by name with a responsive search bar.
+## Tech Stack  
 
-Detailed Recipe View: Access detailed information about ingredients and instructions for each recipe.
+- **Frontend**: React Native with Expo  
+- **API**: Spoonacular Recipe API (or an alternative API) for fetching recipe data  
+- **State Management**: React Hooks  
+- **Storage**: AsyncStorage for managing cached and favorite recipes  
 
-Favorites Management: Save favorite recipes and view them in a dedicated section.
+## Installation  
 
-Mobile Optimization: Fully responsive design, optimized for mobile devices.
+1. Clone this repository:  
+   ```bash  
+   git clone https://github.com/your-username/recipe-corner.git  
+   cd recipe-corner  
+   ```  
+2. Install dependencies:  
+   ```bash  
+   npm install  
+   ```  
+3. Start the development server:  
+   ```bash  
+   npm start  
+   ```  
+4. Run on a simulator or physical device using Expo Go.  
 
-Offline Caching: Cached recipe data for offline viewing.
+## Folder Structure  
 
-Technologies Used
+```
+Recipe-Corner/
+├── app/
+│   ├── index.js                  # Home screen
+│   ├── recipes/[category].js     # Recipe list by category
+│   ├── recipe/[id].js            # Recipe details
+│   ├── recipes/favourites.js     # Favorites list
+├── components/
+│   ├── AppBar.js                 # App bar for navigation
+├── package.json                  # Project metadata
+```
 
-React Native: For building the app's front-end.
+## Usage  
 
-Expo: To streamline development and deployment.
+- Launch the app using Expo.  
+- Navigate through categories and select recipes to view details.  
+- Use the search bar to find specific recipes.  
+- Mark recipes as favorites for quick access later.  
 
-Axios: For API integration to fetch recipes.
+## API Key Setup  
 
-AsyncStorage: For caching data locally and managing favorites.
+Replace the placeholder API key in the code with your Spoonacular API key or an alternative recipe API.  
 
-React Navigation: For seamless in-app navigation.
+```js  
+apiKey: 'your-api-key-here'  
+```  
 
-Spoonacular API: To fetch real-time recipe data.
+## License  
 
-Screens
+This project is licensed under the MIT License.  
 
-Home Screen: Displays recipe categories.
-
-Recipe List Screen: Shows a list of recipes for a selected category.
-
-Recipe Detail Screen: Provides detailed recipe instructions and ingredients.
-
-Favorites Screen: Lists all saved favorite recipes.
-
-Installation
-
-Clone the repository:
-
-git clone https://github.com/yourusername/recipe-corner.git
-
-Navigate to the project directory:
-
-cd recipe-corner
-
-Install dependencies:
-
-npm install
-
-Start the development server:
-
-expo start
-
-How to Use
-
-Launch the app on your device or emulator.
-
-Navigate through recipe categories from the Home Screen.
-
-Search for recipes using the search bar on the Recipe List Screen.
-
-View detailed instructions and ingredients on the Recipe Detail Screen.
-
-Save your favorite recipes for quick access in the Favorites Screen.
-
-API Key Setup
-
-This project uses the Spoonacular API to fetch recipe data. To use the app, you need to obtain a free API key from Spoonacular and replace the placeholder in the code:
-
-apiKey: 'your-api-key-here'
-
-Future Enhancements
-
-Add user authentication for personalized recipe management.
-
-Implement advanced filtering and sorting options.
-
-Enable social sharing of recipes.
-
-License
-
-This project is licensed under the MIT License.
-
-Acknowledgments
-
-Spoonacular API for providing recipe data.
-
-Inspiration from modern recipe apps and community feedback.
-
+--- 
