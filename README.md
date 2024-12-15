@@ -21,8 +21,8 @@ Recipe Corner is a mobile-friendly recipe management app built using React Nativ
 
 1. Clone this repository:  
    ```bash  
-   git clone https://github.com/your-username/recipe-corner.git  
-   cd recipe-corner  
+   git clone https://github.com/your-username/RecipeCorner.git  
+   cd RecipeCorner  
    ```  
 2. Install dependencies:  
    ```bash  
@@ -37,7 +37,7 @@ Recipe Corner is a mobile-friendly recipe management app built using React Nativ
 ## Folder Structure  
 
 ```
-Recipe-Corner/
+RecipeCorner/
 ├── app/
 │   ├── index.js                  # Home screen
 │   ├── recipes/[category].js     # Recipe list by category
